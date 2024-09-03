@@ -1,0 +1,518 @@
+*{
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+          font-family: "Rubik", sans-serif;
+}
+
+/*-----------UTILITY CLASS----------*/
+
+body{
+  background-color: #0f172a;
+}
+/* font-family: "Rubik", sans-serif; */
+
+li{
+          list-style: none;
+}
+
+a{
+          text-decoration: none;
+          color: #000;
+         
+}
+
+.flex{
+          display: flex;
+}
+
+
+
+
+
+nav{
+  height: 100px;
+  width: 100%;
+  /* background-color: red; */
+  padding: 30px;
+  background-color: #121b31;
+  position: fixed;
+  top: 0;
+  z-index: 98;        
+}
+
+.navlogo{
+  gap: 10px;
+}
+.navlogo h1{
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+  color: rgb(206, 228, 237);
+}
+.nav-bar{
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-list{
+  gap:50px;
+}
+.nav-list li a{
+  font-size: 19px;
+  font-family: "Rubik", sans-serif;
+  color: rgb(238, 231, 231);
+  cursor: pointer;
+  transition: all ease-in 0.5s;
+  border-bottom: none;
+}
+
+.nav-list li a:hover{
+  color: aqua;
+  border-bottom: 2px solid aqua;
+  transform: translateY(-5px);
+  
+}
+.nav-list li.home a{
+  color: aqua;
+}
+.nav3{
+  gap:40px;
+ 
+}
+
+.nav3 i{
+  font-size: 25px;
+  cursor: pointer;
+  color: rgb(238, 231, 231);
+}
+
+.subscribe{
+  cursor: pointer;
+  
+}
+.subscribe button{
+  height: 35px;
+  width: 90px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  
+  background:linear-gradient(to right,#0ea7ea,#0BCBD4);
+  transition:all ease-in-out 0.8s;  
+
+}
+.subscribe button a{
+  color: #fff;
+  font-weight: 500;
+}
+.subscribe button:hover{
+  background:linear-gradient(to left,#0ea7ea,#0BCBD4);
+  transform: translateY(-5px);
+}
+
+.hamburger{
+display: none;
+}
+
+
+
+.searchBtn{
+position: absolute;
+top: 50px;
+right: 20%;
+font-size: 25px;
+}
+
+.search-box{
+height: 0;
+width: 350px;
+background-color: #0B1222;
+padding: 8px 12px;
+border-radius: 10px;
+flex-direction: column;
+gap: 10px;
+position: absolute;
+top: 80px;
+right: 18%;
+opacity: 0;
+overflow: hidden;
+}
+
+.search-input{
+height: 35px;
+width: 100%;
+background-color: #0F172A;
+border: 1px solid #34415f;
+border-radius: 10px;
+align-items: center;
+justify-content: space-between;
+}
+
+.search-input input{
+height: 100%;
+width: 85%;
+border-radius: 10px;
+border: none;
+outline: none;
+background-color: transparent;
+color: #7488A7;
+padding-left: 10px;
+}
+
+.search-input.active {
+border: 1px solid rgb(196, 199, 200);
+}
+
+.search-input i{
+font-size: 20px;
+color: #7488A7;
+padding-right: 10px;
+}
+.search-tags {
+flex-direction: column;
+gap:5px;
+}
+.search-tags p{
+font-size: 15px;
+color: rgb(206, 228, 237);
+}
+
+.taglist{
+gap: 10px;
+}
+.taglist li a{
+font-size: 12px;
+color: #7488A7;
+}
+
+.taglist li a:hover{
+color: rgb(206, 228, 237);
+}
+
+@media (min-width: 450px) and (max-width: 950px){
+
+  .nav-bar{
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 60px;
+  }
+
+  .nav-list{
+    background-color: #121b31ae;
+    position: absolute;
+    width: 350px;
+    height: 100vh;
+    display: none;
+    top: 100px;
+    right: 0;
+    padding: 50px 20px;
+    
+  }
+
+  
+
+  .nav-list li{
+    margin-bottom: 20px;
+  }
+
+  .nav-list li a{
+    font-size: 25px;
+    
+  }
+  .hamburger{
+            display: block;
+  }
+
+  .nav3{
+            gap:20px;
+           
+  }
+}
+@media (max-width: 450px){
+
+  nav{
+            height: 90px;
+            
+            
+  }
+
+  .navlogo h1{
+            font-size: 25px;
+            font-family: "Rubik", sans-serif;
+            color: rgb(206, 228, 237);
+  }
+  .nav-bar{
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 10px;
+  }
+  
+  .nav-list{
+    background-color: #121b31ae;
+    position: absolute;
+    width: 350px;
+    height: 100vh;
+    display: none;
+    top: 100px;
+    right: 0;
+    padding: 50px 20px;
+    
+  }
+
+  .nav-list li{
+    margin-bottom: 20px;
+  }
+
+  .nav-list li a{
+    font-size: 25px;
+    
+  }
+  
+  .nav-list li a:hover{
+            color: aqua;
+            border-bottom: 2px solid aqua;
+            transform: translateY(-5px);
+            
+  }
+  
+  .nav3{
+            align-items: center;
+            gap:8px; 
+  }
+  
+  .nav3 i{
+            font-size: 20px;      
+  }
+
+
+  .nav-list{
+            display: none;
+  }
+  .hamburger{
+            display: block;
+  }
+
+  
+}
+@media (max-width: 425px){
+
+  nav{
+            height: 90px;
+            padding: 30px 10px;          
+  }
+  
+  .navlogo{
+            gap:0;
+  }
+
+  .navlogo h1{
+            display: none;
+  }
+  .nav-bar{
+            align-items: center;
+            gap: 50px;
+           
+  }
+
+  .nav-list{
+    background-color: #121b31;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    top: 90px;
+    right: 0;
+    padding: 50px 20px;
+    
+  }
+
+  .nav-list li{
+    margin-bottom: 20px;
+  }
+
+  .nav-list li a{
+    font-size: 25px;
+    
+  }
+  
+  .nav3{
+            gap:10px;
+           
+  }
+  
+  .hamburger{
+    display: block;
+  }
+
+  .search-box{
+    right: 0;
+    margin-right: 5px;
+  }
+
+}
+
+
+
+
+
+.login-container{
+          height: 100%;
+          width: 100%;
+          background-color: #0F172A;
+          display: flex;
+          padding-top: 50px;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 100px;
+          padding-bottom: 100px;
+       
+}
+
+.heading h1{
+  font-size: 50px;
+  color: transparent;
+    background:linear-gradient(to right,#0ea7ea,#0BCBD4);
+  -webkit-background-clip: text;
+}
+
+.login-box{
+          height: 100%;
+          min-width: 25%;
+          background-color: #131C31;
+          border: 1px solid #34415f;
+          border-radius: 20px;
+          padding: 35px 20px;
+          margin-top: 30px;
+}
+.forget p a{
+  color: #c5d8f4;
+}
+.login-box p{
+  color: #7488A7;
+}
+
+span .sign{
+  color: transparent;
+  background:linear-gradient(to right,#0ea7ea,#0BCBD4);
+-webkit-background-clip: text;
+}
+
+.form{
+          flex-direction: column;
+          gap: 20px;
+}
+
+
+.username-box{
+          height: 50px;
+          width: 90%;
+          background-color: transparent;
+          margin-inline: auto;
+          border: 1px solid #34415f;
+          border-radius: 10px;
+          
+}
+
+.username-box input{
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          padding: 10px;
+          font-size: 20px;
+          outline: none;
+          border: none;
+          background-color: transparent;
+          color: #7488A7;
+}
+
+.password-box{
+          height: 50px;
+          width: 90%;
+          background-color: transparent;
+          margin-inline: auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: 1px solid #34415f;
+          border-radius: 10px;
+}
+
+.password-box input{
+          width: 80%;
+          height: 100%;
+          border-radius: 10px;
+          padding: 10px;
+          font-size: 20px;
+          outline: none;
+          border: none;
+          background-color: transparent;
+          color: #7488A7;
+}
+
+.password-box label i{
+          font-size: 25px;
+          padding-right: 10px;
+          color: #34415f;
+}
+
+.form p{
+          margin-left: 15px;
+}
+.loginBtn button{
+          height: 50px;
+          width: 90%;
+          margin-inline: 10px;
+          border: none;
+          border-radius: 10px;
+          background:linear-gradient(to right,#0ea7ea,#0BCBD4);
+          font-size: 15px;
+          font-weight: 700;
+          transition:all ease-in-out 0.2s;
+}
+.loginBtn button:hover{
+  background:linear-gradient(to left,#0ea7ea,#0BCBD4);
+  color: #fff;
+}
+
+.sign-email p{
+  color: #7488A7;
+  margin: 15px 0;
+}
+
+.google-box{
+          height: 40px;
+          min-width: 25%;
+          text-align: center;
+          color: #7488A7;
+          background-color: #131C31;
+          border: 1px solid #34415f;
+          border-radius: 10px;
+          padding: 10px 80px 10px 80px; 
+          gap: 15px;
+         
+            
+}
+.google-box img{
+  height: 100%;
+}
+
+
+@media (max-width:400px) {
+  .heading h1{
+    font-size: 40px;
+  
+  }
+
+  .google-box h3{
+font-size: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
