@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="login.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+
+<div class="page1">
+  <nav>
+    <div class="nav-bar flex">
+              <div class="nav1">
+                        <div class="navlogo flex">
+                                  <img src="images/favicon.svg" alt="">
+                                  <h1>hacknode</h1>
+                        </div>
+              </div>
+              <div class="nav2">
+                       
+                                  <ul class="nav-list flex">
+                                            <li class="home"><a href="index.html">Home</a></li>
+                                            <li><a href="">Recent Post</a></li>
+                                            <!-- <li><a href="">Featured Article</a></li> -->
+                                            <li><a href="hackathon.html">Hackathons</a></li>
+                                            <li><a href="">Trending Tags</a></li>
+                                       
+                                  </ul>
+                       
+              </div>
+              <div class="nav3 flex">
+                        
+                        
+                        <div class="subscribe">
+                                  <button><a href="login.html">subscribe</a></button>
+                        </div>
+
+                        <div class="hamburger">
+                          <i class="ri-menu-line" onclick="expandMenu()"></i>
+                      </div>
+              </div>
+
+    </div>
+</nav>
+
+
+<div class="login-container">
+
+  <div class="heading"><h1>Welcome Back !</h1></div>
+
+  <div class="login-box">
+    <form class="flex form" action="" onsubmit="submit()">
+      <div class="username-box">
+        <input type="text" id="username" placeholder="username">
+      </div>
+
+      <div class="password-box">
+        <input type="password" id="password" placeholder="password">
+        <label for="password" value="password"><i class="ri-eye-off-line"></i></label>
+      </div>
+
+      <div class="forget"><p><a href="">Forget Passoword?</a></p></div>
+
+      <div class="loginBtn">
+        <button>Log In</button>
+      </div>
+
+      <p>Don’t have an account? <span><a class="sign" href="">Sign Up</a></span></p>
+      
+    </form>
+  </div>
+
+  
+  <div class="sign-email"><p>Or, sign in with your email</p></div>
+
+  <div class="google-box flex">
+    <img src="images/Google__G__logo.svg.png" alt="">
+    <h3> Sign in with google</h3>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="login.js"></script>
+</body>
+</html>
